@@ -1,2 +1,2 @@
-worker: python main.py && tail -f /dev/null
+web:gunicorn app:app & python main.py 
 
